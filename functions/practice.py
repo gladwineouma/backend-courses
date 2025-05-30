@@ -195,9 +195,22 @@ def checkStatus(self,a,b,flag):
 
             
 # // Build a system to keeptrack of personal connections and their contact details.
-# // The systemshould allow users to add new contact details
+# // The system should allow users to add new contact details
 # // modify existing ones, remove contacts, and retrieve their 
 # // contact's details without specifying how to store the contacts.
+
+class Personal_connection:
+    def _init_(self,details):
+        self.details = []
+
+hope = Personal_connection
+
+
+
+
+
+
+
 
 # // Develop a task scheduling platform that helps users organise their daily 
 # //activities. Users should be able to add, edit, and delete tasks, set priority

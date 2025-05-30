@@ -1,7 +1,7 @@
 class Account:
     def __init__(self,name):
         self.name = name
-        self.balance = 0
+        self._balance = 0  #underscore signifies a private fro one to change a an object that is private u create a new method
         self.deposits = []
         self.withdrawal = []
         self.loan = []
@@ -34,11 +34,27 @@ class Account:
     def transfer(self,amount,name):
         self.amount = amount
         self.name = name
+        # if amount transaction fee/balance/withdraw/deposit
+        # add repayment on the class
+        # deposit extra amount
+        # Add encapsulation(balance,loan limit)
+        # find out encapsulation as a convention but not forced rule
 
+    def set_balance(self,amount):  #Applicable only when an attribute is private.
+        self._balance = amount
 
     def get_balance(self):
         balance = sum(self.deposits) - sum(self.withdrawal)
         return f"Your account balance is {balance}"
+
+
+    def loan_limit(self):
+        deposit_history = sum(self.deposit)
+        return deposit_history//3
+
+    def request_loan(self,amount):
+        if amount > self.loan_limit():
+            return 
 
 
     def request_loan(self,amount):

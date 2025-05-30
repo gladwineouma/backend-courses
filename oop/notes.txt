@@ -1,0 +1,13 @@
+Inheritance
+Is a concept that a class inherits the attributes and behaviour of another class.
+The class that is inheruring is called a child a class.
+The class that is being inherited from is the parent class.
+Inheritance promotes code reuse and organisation hierachy.
+
+Polymorphism
+Is the ability of objects of different classes responding to the same method/behaviour in different ways. (Children implenting the same behaviour in different ways)
+
+Encapsulation/Enclosed
+Is the practice of bundling data and related method in a single object/unit called a class.
+Used to hide the internal details of a class by marking attributes and methods as private or protected.
+To mark an attribute/mehtod as private we prefix an underscore
