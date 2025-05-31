@@ -199,23 +199,29 @@ def checkStatus(self,a,b,flag):
 # // modify existing ones, remove contacts, and retrieve their 
 # // contact's details without specifying how to store the contacts.
 
-class Personal_connection:
-    def _init_(self,details):
-        self.details = []
-
-hope = Personal_connection
-
-
-
-
-
-
-
 
 # // Develop a task scheduling platform that helps users organise their daily 
 # //activities. Users should be able to add, edit, and delete tasks, set priority
 # //and deadlines and receive reminders for upcoming tasks. Design the system to handle
 # //recurring task
+
+
+
+# Inheritance : allows properties and method to be inherited from a a parent class.
+
+class Animal:
+    def __init__self(self, name):
+        self.name = name
+
+    def speak(self):
+        pass #used for a method that is to be overridden by a child class
+
+class Dog(Animal):
+    def __init__(self,name):
+        super().__init__(name)
+
+    def speak(self):
+        return f"{self.name} barks!"  #overriding speak method in parent class
  
 
     
