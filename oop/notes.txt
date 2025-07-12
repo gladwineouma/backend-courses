@@ -11,3 +11,52 @@ Encapsulation/Enclosed
 Is the practice of bundling data and related method in a single object/unit called a class.
 Used to hide the internal details of a class by marking attributes and methods as private or protected.
 To mark an attribute/mehtod as private we prefix an underscore
+
+
+
+Django in python
+Battery included (builtin library) to accomplish common web development
+Builtin Django  
+    1.Database intergration comes with an ORM (object relational mapper) = maps python classes to 
+    2.Handling HTTP (HyperText Transfer Protocol )
+    3.Catching temporarily stores frequently accessed data
+    4.Authentication
+    5.API development
+    6.Security features
+    7.Highly scalable: ability to handle resource requirement(handle traffic, data, file)
+    8.Maintanability: it is based on OOP patterns classes inheritance, polymorphism, Encapsulation
+
+To set up Django project.
+Steps:
+    Install python 
+    PIP(Package Install Program) : Used to install python dependencies
+    UV is a PIP wrapper()
+
+
+
+Virtual environment is a self contained environment in a machine that installs python dependencies encapsulated from the rest of the machine.
+Each project should have its own virtual environment
+
+Mnanage.py is a commandline utility of project administrative task
+asgi.py ansynchronous server gateway interface
+wsgi.py web server gateway interface
+setting is where we put project configuration for things like databases catching 
+url.py is forurl routing configuration
+
+
+Migrations- used to track database schema changes
+Model.py the database structure/models entities are converted to django model
+Test.py where unit test are created
+View.py where http requests are being handled
+
+Django model has name or object model.  
+Product with their data types
+Name: String
+Price: Float
+Quantity: interface
+color: cha-field
+Image : Image field
+Text: 
+
+Migration is the act of converting model defination into a database schema.(python3 manage.py make migration)
+
